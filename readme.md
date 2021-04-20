@@ -1,15 +1,15 @@
-[npm-badge]: https://img.shields.io/npm/v/react-native-material-dropdown.svg?colorB=ff6d00
-[npm-url]: https://npmjs.com/package/react-native-material-dropdown
-[license-badge]: https://img.shields.io/npm/l/react-native-material-dropdown.svg?colorB=448aff
-[license-url]: https://raw.githubusercontent.com/n4kz/react-native-material-dropdown/master/license.txt
-[codeclimate-badge]: https://img.shields.io/codeclimate/maintainability/n4kz/react-native-material-dropdown.svg
-[codeclimate-url]: https://codeclimate.com/github/n4kz/react-native-material-dropdown
+[npm-badge]: https://img.shields.io/npm/v/react-native-material-dropdown-no-proptypes.svg?colorB=ff6d00
+[npm-url]: https://npmjs.com/package/react-native-material-dropdown-no-proptypes
+[license-badge]: https://img.shields.io/npm/l/react-native-material-dropdown-no-proptypes.svg?colorB=448aff
+[license-url]: https://raw.githubusercontent.com/philipbeber/react-native-material-dropdown-no-proptypes/master/license.txt
+[codeclimate-badge]: https://img.shields.io/codeclimate/maintainability/philipbeber/react-native-material-dropdown-no-proptypes.svg
+[codeclimate-url]: https://codeclimate.com/github/philipbeber/react-native-material-dropdown-no-proptypes
 [example-url]: https://user-images.githubusercontent.com/2055622/27727487-591a807a-5d87-11e7-89f6-f31a442db0c6.gif
 [textinput]: https://facebook.github.io/react-native/docs/textinput.html#props
 [touchable]: https://facebook.github.io/react-native/docs/touchablewithoutfeedback.html#props
-[textfield]: https://github.com/n4kz/react-native-material-textfield#properties
+[textfield]: https://github.com/philipbeber/react-native-material-textfield#properties
 
-# react-native-material-dropdown
+# react-native-material-dropdown-no-proptypes
 
 [![npm][npm-badge]][npm-url]
 [![license][license-badge]][license-url]
@@ -32,14 +32,14 @@ Material dropdown with consistent behaviour on iOS and Android
 ## Installation
 
 ```bash
-npm install --save react-native-material-dropdown
+npm install --save react-native-material-dropdown-no-proptypes
 ```
 
 ## Usage
 
 ```javascript
 import React, { Component } from 'react';
-import { Dropdown } from 'react-native-material-dropdown';
+import { Dropdown } from 'react-native-material-dropdown-no-proptypes';
 
 class Example extends Component {
   render() {
@@ -113,8 +113,8 @@ Other [TextField][textfield], [TextInput][textinput] and [TouchableWithoutFeedba
 ## Example
 
 ```bash
-git clone https://github.com/n4kz/react-native-material-dropdown
-cd react-native-material-dropdown/example
+git clone https://github.com/philipbeber/react-native-material-dropdown-no-proptypes
+cd react-native-material-dropdown-no-proptypes/example
 npm install
 npm run ios # or npm run android
 ```
