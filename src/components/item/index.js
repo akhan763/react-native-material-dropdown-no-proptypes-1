@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react';
-import { Button } from 'react-native-material-buttons';
+import { Button } from 'react-native-material-buttons-no-proptypes';
 
 import styles from './styles';
 
