@@ -12,6 +12,7 @@ import {
 } from 'react-native';
 import Ripple from 'react-native-material-ripple';
 import { TextInput } from 'react-native-paper';
+import FontAwesome from 'react-native-vector-icons/FontAwesome'
 
 import DropdownItem from '../item';
 import styles from './styles';
@@ -401,6 +402,7 @@ export default class Dropdown extends PureComponent {
             data,
             renderBase,
             labelExtractor,
+            bottomLine=true,
             dropdownOffset,
             renderAccessory = this.renderAccessory,
         } = this.props;
@@ -423,17 +425,22 @@ export default class Dropdown extends PureComponent {
         title = null == title || 'string' === typeof title ?
             title :
             String(title);
-
+            let { baseColor: backgroundColor } = this.props;
+            let triangleStyle = { backgroundColor };
         return (
+            <View>
             <TextInput
                 style={{backgroundColor: "transparent", marginBottom: 16}}
                 label=''
                 {...props}
+                underlineColor={bottomLine?"#cdcdcd": "transparent"}
                 value={title}
                 editable={false}
                 onChangeText={undefined}
                 renderAccessory={renderAccessory}
+                right={<TextInput.Icon name={() => <FontAwesome name={'caret-down'} size={20} color={'#cdcdcd'} />} />}
             />
+            </View>
         );
     }
 
@@ -684,3 +691,4 @@ export default class Dropdown extends PureComponent {
         );
     }
 }
+
